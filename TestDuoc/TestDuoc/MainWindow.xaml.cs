@@ -24,6 +24,7 @@ namespace TestDuoc
         public MainWindow()
         {
             InitializeComponent();
+            txt_rut.Foreground = Brushes.Gray;
         }
 
         private void btn_buscar_Click(object sender, RoutedEventArgs e)
@@ -31,5 +32,13 @@ namespace TestDuoc
             CPersona controlador = new CPersona();
             lbl_nombre.Content = controlador.obtenerNombre(Int32.Parse(txt_rut.Text));
         }
+
+        private void txt_rut_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txt_rut.Text = "";
+            txt_rut.Foreground = Brushes.Black;
+        }
+
+      
     }
 }
