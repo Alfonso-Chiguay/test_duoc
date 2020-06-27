@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BaseDatos.Controlador;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace TestDuoc
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btn_buscar_Click(object sender, RoutedEventArgs e)
+        {
+            CPersona controlador = new CPersona();
+            lbl_nombre.Content = controlador.obtenerNombre(Int32.Parse(txt_rut.Text));
         }
     }
 }
