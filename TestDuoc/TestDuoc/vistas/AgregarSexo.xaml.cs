@@ -35,7 +35,7 @@ namespace TestDuoc.vistas
             }
             else
             {
-                MessageBox.Show("ERROR");
+                MessageBox.Show("ERROR AGREGANDO SEXO");
             }
 
         }
