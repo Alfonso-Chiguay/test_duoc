@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TestDuoc.vistas;
 
 namespace TestDuoc
 {
@@ -39,6 +40,10 @@ namespace TestDuoc
             txt_rut.Foreground = Brushes.Black;
         }
 
-      
+        private void btn_agregar_sexo_Click(object sender, RoutedEventArgs e)
+        {
+            AgregarSexo ventana = new AgregarSexo();
+            ventana.ShowDialog();
+        }
     }
 }

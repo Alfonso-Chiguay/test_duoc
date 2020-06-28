@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="AgregarSexo" Height="450" Width="800">
     <Grid>
-        <Label Content="ESTA VENTANA ES PARA AGREGAR SEXOOOOO" HorizontalAlignment="Left" Margin="165,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="INDIQUE LA DESCRIPCION DEL SEXO" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_descripcion_sexo" HorizontalAlignment="Left" Height="23" Margin="10,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"/>
+        <Button x:Name="btn_guardar" Content="Guardar" HorizontalAlignment="Left" Margin="234,53,0,0" VerticalAlignment="Top" Width="75" Click="btn_guardar_Click"/>
 
     </Grid>
 </Window>

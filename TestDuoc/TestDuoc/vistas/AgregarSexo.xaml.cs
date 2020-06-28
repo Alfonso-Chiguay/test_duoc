@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BaseDatos.Controlador;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,21 @@ namespace TestDuoc.vistas
         public AgregarSexo()
         {
             InitializeComponent();
+        }
+
+        private void btn_guardar_Click(object sender, RoutedEventArgs e)
+        {
+            CSexo controlador = new CSexo();
+            if (controlador.agregarNuevoSexo(txt_descripcion_sexo.Text)>0)
+            {
+                MessageBox.Show("SEXO AGREGADO");
+                txt_descripcion_sexo.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("ERROR");
+            }
+
         }
     }
 }
